@@ -1,0 +1,12 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('Qanelas', normal, 300, '../fonts/Qanelas-Light.woff2')
+@include font('Qanelas', normal, 400, '../fonts/Qanelas-Regular.woff2')
+@include font('Qanelas', normal, 500, '../fonts/Qanelas-Medium.woff2')
+@include font('Qanelas', normal, 700, '../fonts/Qanelas-Bold.woff2')
