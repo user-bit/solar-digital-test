@@ -3,459 +3,606 @@
 @import libs
 
 ::placeholder
-	color: #666
+  color: #666
 
 ::selection
-	background-color: $accent
-	color: $text
+  background-color: $accent
+  color: $text
+
 p
-	margin: 0
-	padding: 0
+  margin: 0
+  padding: 0
 
 input, textarea
-	outline: none
-	&:focus:required:invalid
-		border-color: red
-	&:required:valid
-		border-color: #345AFF
+  outline: none
+  &:focus:required:invalid
+    border-color: red
+  &:required:valid
+    border-color: #345AFF
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: 'Qanelas', sans-serif
-	overflow-x: hidden
-	color: $text
-	background: $accent
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: 'Qanelas', sans-serif
+  overflow-x: hidden
+  color: $text
+  background: $accent
 
 ._container
-	margin-right: auto
-	margin-left: auto
-	position: relative
+  margin-right: auto
+  margin-left: auto
+  position: relative
 
 .w_1340
-	width: 1340px
+  width: 1340px
 
 .w-1040
-	width: 1040px
+  width: 1040px
 
 .d-flex
-	display: flex
+  display: flex
 
 .flex-wrap
-	flex-wrap: wrap
+  flex-wrap: wrap
 
 .justify-center
-	justify-content: center
+  justify-content: center
 
 .justify-space-between
-	justify-content: space-between
+  justify-content: space-between
 
 .align-center
-	align-items: center
+  align-items: center
 
 .align-end
-	align-items: flex-end
+  align-items: flex-end
 
 .p-30-0
-	padding: 30px 0
+  padding: 30px 0
+
+.p-25-0
+  padding: 25px 0
 
 .z-index-4
-	z-index: 4
+  z-index: 4
 
 .p-0
-	padding: 0
+  padding: 0
 
 .mt-190
-	margin-top: 190px
+  margin-top: 190px
 
 .mt-100
-	margin-top: 100px
+  margin-top: 100px
 
 .mt-180
-	margin-top: 180px
+  margin-top: 180px
 
 .mt-290
-	margin-top: 290px
+  margin-top: 290px
 
 .h-700
-	height: 700px
+  height: 700px
 
 .mt-210
-	margin-top: 210px
+  margin-top: 210px
 
 .mt-35
-	margin-top: 35px
+  margin-top: 35px
 
 .ml-55
-	margin-left: 55px
+  margin-left: 55px
 
 .mt-120
-	margin-top: 120px
+  margin-top: 120px
 
 .pt-170
-	padding-top: 170px
+  padding-top: 170px
 
 .mt-45
-	margin-top: 45px
+  margin-top: 45px
 
 .header_section
-	background: linear-gradient(342.39deg, #1ACBFD 10.97%, #345AFF 94.68%)
-	height: 900px
-	width: 100%
-	position: relative
+  background: linear-gradient(342.39deg, #1ACBFD 10.97%, #345AFF 94.68%)
+  height: 120vh
+  width: 100%
+  position: relative
 
 .header_section:before
-	content: ""
-	position: absolute
-	left: 0
-	right: 0
-	bottom: 0
-	height: 100%
-	background-image: url("../img/_src/bg_1.png")
-	background-size: 100%
-	z-index: 2
+  content: ""
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  height: 100%
+  background-image: url("../img/_src/bg_1.png")
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: 100%
+  z-index: 2
 
 .header_section:after
-	content: ""
-	position: absolute
-	left: 0
-	right: 0
-	bottom: 0
-	height: 835px
-	background-image: url("../img/_src/bg_2.png")
-	background-size: 100%
-	z-index: 1
+  content: ""
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  height: 120vh
+  background-image: url("../img/_src/bg_2.png")
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: 100%
+  z-index: 1
 
 ul.menu_list, ul.list_language
-	list-style-type: none
-	padding: 0
-	margin: 0
+  list-style-type: none
+  padding: 0
+  margin: 0
 
 ul.list_language
-	display: none
+  display: none
 
 ul.list_language li
-	text-transform: uppercase
+  text-transform: uppercase
 
 .language_block
-	padding-left: 28px
-	position: relative
+  padding-left: 28px
+  position: relative
 
 .language_block:before
-	content: ""
-	position: absolute
-	top: 0
-	left: 14px
-	height: 100%
-	width: 1px
-	background: rgba(255, 255, 255, 0.2)
+  content: ""
+  position: absolute
+  top: 0
+  left: 14px
+  height: 100%
+  width: 1px
+  background: rgba(255, 255, 255, 0.2)
 
 p.main_language
-	font-weight: 500
-	font-size: 15px
-	color: #fff
-	cursor: pointer
-	line-height: 1
-	text-transform: uppercase
+  font-weight: 500
+  font-size: 15px
+  color: #fff
+  cursor: pointer
+  line-height: 1
+  text-transform: uppercase
+  position: relative
 
 ul.menu_list.d-flex li
-	margin-left: 30px
-	position: relative
-	line-height: 1
+  margin-left: 30px
+  position: relative
+  line-height: 1
 
 ul.menu_list.d-flex li:before
-	content: ""
-	position: absolute
-	left: 0
-	bottom: 0
-	width: 0
-	background: #FFFFFF
-	height: 1px
-	transition: .4s
+  content: ""
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 0
+  background: #FFFFFF
+  height: 1px
+  transition: .4s
 
 ul.menu_list.d-flex li:hover:before
-	width: 100%
+  width: 100%
 
 li.btn:before
-	display: none
+  display: none
 
 ul.menu_list.d-flex li a
-	font-weight: 500
-	font-size: 15px
-	color: #fff
-	text-decoration: none
+  font-weight: 500
+  font-size: 15px
+  color: #fff
+  text-decoration: none
 
 ul.menu_list.d-flex li.line_horizontal
-	background: rgba(255, 255, 255, 0.3)
-	width: 1px
-	height: 30px
+  background: rgba(255, 255, 255, 0.3)
+  width: 1px
+  height: 30px
 
 button.btn_register
-	background: unset
-	color: #fff
-	border: 1px solid #FFFFFF
-	border-radius: 4px
-	cursor: pointer
-	padding: 7px 14px
+  background: unset
+  color: #fff
+  border: 1px solid #FFFFFF
+  border-radius: 4px
+  cursor: pointer
+  padding: 7px 14px
 
 button.btn_register:hover
-	background: #FFF
-	color: $text
+  background: #FFF
+  color: $text
 
 .absolute_center_section
-	text-align: center
-	height: 900px
-	position: absolute
-	width: 790px
-	left: 50%
-	top: 0
-	transform: translate(-50%,0)
-	display: flex
-	flex-direction: column
-	justify-content: center
-	align-items: center
-	z-index: 3
+  text-align: center
+  height: 100vh
+  position: absolute
+  width: 790px
+  left: 50%
+  margin-left: -370px
+  top: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  z-index: 3
 
 .absolute_center_section h1
-	font-weight: 500
-	font-size: 70px
-	line-height: 70px
-	letter-spacing: 0.155555px
-	color: #fff
-	margin-bottom: 20px
+  font-weight: 500
+  font-size: 70px
+  line-height: 70px
+  letter-spacing: 0.155555px
+  color: #fff
+  margin-bottom: 20px
 
 .absolute_center_section p
-	font-size: 24px
-	line-height: 29px
-	letter-spacing: 0.36px
-	color: #fff
+  font-size: 24px
+  line-height: 29px
+  letter-spacing: 0.36px
+  color: #fff
 
 button.btn_main
-	background: linear-gradient(180.4deg, #00F9FF 1.52%, #00D0F1 122.12%)
-	box-shadow: 0px 8px 14px rgba(0, 107, 206, 0.3)
-	border-radius: 4px
-	border: unset
-	padding: 15px 50px
-	color: #fff
-	font-weight: 500
-	font-size: 18px
-	margin-top: 30px
-	cursor: pointer
+  background: linear-gradient(180.4deg, #00F9FF 1.52%, #00D0F1 122.12%)
+  box-shadow: 0px 8px 14px rgba(0, 107, 206, 0.3)
+  border-radius: 4px
+  border: unset
+  padding: 15px 50px
+  color: #fff
+  font-weight: 500
+  font-size: 18px
+  margin-top: 30px
+  cursor: pointer
 
 button.btn_main:hover
-	background: linear-gradient(180.4deg,#06dfe4 1.52%,#00a7c1 122.12%)
+  background: linear-gradient(180.4deg, #06dfe4 1.52%, #00a7c1 122.12%)
 
 .a_section
-	background: #FFFFFF
-	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.03)
-	border-radius: 6px
-	margin-top: -190px
-	z-index: 4
-	overflow: hidden
+  background: #FFFFFF
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.03)
+  border-radius: 6px
+  margin-top: -190px
+  z-index: 4
+  overflow: hidden
 
 .item_a
-	width: 50%
-	padding: 70px 130px 70px 70px
-	border: 1px #f7f7f7
-	border-style: none none solid solid
+  width: 50%
+  padding: 70px 130px 70px 70px
+  border: 1px #f7f7f7
+  border-style: none none solid solid
 
 .a_img_item
-	width: 48px
-	height: 48px
-	display: flex
-	align-items: center
-	justify-content: center
-	border-radius: 4px
+  width: 48px
+  height: 48px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 4px
 
 .a_img_1
-	background: linear-gradient(315deg, #FF7676 0%, #F54EA2 100%)
+  background: linear-gradient(315deg, #FF7676 0%, #F54EA2 100%)
 
 .a_img_2
-	background: linear-gradient(310.68deg, #FCE38A 4.65%, #F38181 90.07%)
+  background: linear-gradient(310.68deg, #FCE38A 4.65%, #F38181 90.07%)
 
 .a_img_3
-	background: linear-gradient(315deg, rgba(23, 234, 217, 0.1) 0%, #22D9DB 34.08%, #6078EA 100%)
+  background: linear-gradient(315deg, rgba(23, 234, 217, 0.1) 0%, #22D9DB 34.08%, #6078EA 100%)
 
 .a_img_4
-	background: linear-gradient(135deg, #43E695 0%, #3BB2B8 100%)
+  background: linear-gradient(135deg, #43E695 0%, #3BB2B8 100%)
 
 .item_a p
-	padding-left: 20px
-	width: 85%
-	color: $text
-	font-weight: normal
-	font-size: 15px
+  padding-left: 20px
+  width: 85%
+  color: $text
+  font-weight: normal
+  font-size: 15px
 
 ul.list_info
-	background: #FFFFFF
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03)
-	border-radius: 4px
-	list-style-type: none
-	padding: 0
-	display: flex
-	justify-content: space-around
-	position: relative
+  background: #FFFFFF
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03)
+  border-radius: 4px
+  list-style-type: none
+  padding: 0
+  display: flex
+  justify-content: space-around
+  position: relative
 
 ul.list_info li
-	height: 50px
-	display: flex
-	align-items: center
-	font-size: 15px
-	line-height: 18px
-	color: #000
-	cursor: pointer
-	min-width: 85px
+  height: 50px
+  display: flex
+  align-items: center
+  font-size: 15px
+  line-height: 18px
+  color: #000
+  cursor: pointer
+  min-width: 85px
+  position: relative
+
+li.item_info:before
+  content: ""
+  position: absolute
+  left: -20px
+  background: #2E73FE
+  bottom: 0
+  height: 2px
+  transition: .3s
+  width: 0
+
+li.item_info:hover:before
+  width: 125%
+
+li.item_info:hover
+  color: #2E73FE
+
+li.item_info.active
+  color: #2E73FE
+
+li.item_info.active:after
+  content: ""
+  height: 2px
+  background: #2E73FE
+  position: absolute
+  left: -25px
+  right: -25px
+  bottom: 0
 
 ul.list_info li:active
-	color: #00aeef
+  color: #00aeef
 
 .title_deposit
-	font-size: 40px
-	letter-spacing: 0.09px
-	color: $text
+  font-size: 40px
+  letter-spacing: 0.09px
+  color: $text
 
 .text_deposit
-	padding-right: 40px
+  padding-right: 40px
 
 .text_deposit span
-	font-weight: normal
-	font-size: 18px
-	line-height: 1.4
-	color: $text
+  font-weight: normal
+  font-size: 18px
+  line-height: 1.4
+  color: $text
 
 .left_deposit, .right_deposit
-	width: 50%
+  width: 50%
 
 .right_deposit
-	text-align: right
+  text-align: right
 
 .assets_title
-	font-weight: normal
-	font-size: 40px
-	line-height: 50px
-	letter-spacing: 0.09px
-	color: $text
-	text-align: center
+  font-weight: normal
+  font-size: 40px
+  line-height: 50px
+  letter-spacing: 0.09px
+  color: $text
+  text-align: center
 
 .assets_section
-	padding: 150px 0 190px
-	background: #fff
+  padding: 150px 0 190px
+  background: #fff
 
 .assets_item
-	width: 20%
-	align-items: center
-	display: flex
-	justify-content: center
+  width: 20%
+  align-items: center
+  display: flex
+  justify-content: center
 
 .assets_list
-	width: 940px
-	margin: 30px auto 0
+  width: 940px
+  margin: 30px auto 0
 
 .assets_item img
-	filter: grayscale(100%)
-	transition: .5s
-	cursor: pointer
+  filter: grayscale(100%)
+  transition: .5s
+  cursor: pointer
 
 .assets_item img:hover
-	filter: grayscale(0)
-	transform: scale(1.1)
+  filter: grayscale(0)
+  transform: scale(1.1)
 
 .mobile_applications:before
-	content: ""
-	background: url(../img/_src/bg_rectangle.svg) no-repeat
-	height: 700px
-	width: 100%
-	position: absolute
-	left: 0
+  content: ""
+  background: url(../img/_src/bg_rectangle.svg) no-repeat
+  height: 700px
+  width: 100%
+  position: absolute
+  left: 0
 
 .mobile_applications_title
-	font-weight: normal
-	font-size: 40px
-	line-height: 1
-	letter-spacing: 0.09px
-	color: #FFFFFF
+  font-weight: normal
+  font-size: 40px
+  line-height: 1
+  letter-spacing: 0.09px
+  color: #FFFFFF
 
 .mobile_applications_text span
-	font-weight: normal
-	font-size: 18px
-	color: #fff
+  font-weight: normal
+  font-size: 18px
+  color: #fff
 
 .mobile_applications_left
-	width: 40%
-	padding-left: 65px
+  width: 40%
+  padding-left: 65px
 
 .mobile_applications_right
-	width: 60%
+  width: 60%
+  display: flex
+  align-items: center
+  justify-content: center
 
 .mobile_applications_text
-	margin-top: 15px
-	width: 400px
+  margin-top: 15px
+  width: 400px
 
 img.phone_2
-	margin-top: -300px
+  margin-top: -300px
 
 img.phone_1
-	margin-top: -135px
+  margin-top: -135px
 
 .binary_title
-	font-weight: normal
-	font-size: 40px
-	letter-spacing: 0.09px
+  font-weight: normal
+  font-size: 40px
+  letter-spacing: 0.09px
+  line-height: 1.2
 
 .binary_section
-	width: 1140px
+  width: 1140px
 
 footer.footer:before
-	content: ""
-	position: absolute
-	left: 0
-	background: url("../img/_src/bg_footer.svg") no-repeat
-	width: 100%
-	height: 340px
-	background-size: cover
+  content: ""
+  position: absolute
+  left: 0
+  background: url("../img/_src/bg_footer.svg") no-repeat
+  width: 100%
+  height: 340px
+  background-size: cover
 
 p.title_footer_menu
-	font-weight: 500
-	font-size: 16px
+  font-weight: 500
+  font-size: 16px
 
 ul.list_footer
-	padding: 0
-	list-style-type: none
+  padding: 0
+  list-style-type: none
 
 ul.list_footer li a
-	font-size: 15px
-	color: #1E2945
+  font-size: 15px
+  color: #1E2945
 
 .list_social a
-	background: linear-gradient(316.02deg, #1ACBFD -79.1%, #345AFF 95.81%)
-	border-radius: 6px
-	width: 38px
-	height: 38px
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-left: 10px
+  background: linear-gradient(316.02deg, #1ACBFD -79.1%, #345AFF 95.81%)
+  border-radius: 6px
+  width: 38px
+  height: 38px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-left: 10px
+  transition: .4s
+  cursor: pointer
+
+.list_social a:hover
+  background: #143380
 
 #toTop
-	width: 40px
-	height: 38px
-	text-align: center
-	position: fixed
-	bottom: 100px
-	right: 0
-	cursor: pointer
-	display: none
-	color: #fff
-	font-size: 11px
-	z-index: 9999
-	background: #2599fe
-	border: 1px solid #ffffff
-	padding-top: 5px
+  width: 40px
+  height: 38px
+  text-align: center
+  position: fixed
+  bottom: 150px
+  right: 15px
+  cursor: pointer
+  display: none
+  color: #fff
+  font-size: 11px
+  z-index: 9999
+  background: #2599fe
+  border: 1px solid #ffffff
+  padding-top: 5px
 
 #toTop img
-	width: 70%
+  width: 70%
+
+.menu
+  margin-top: 10px
+
+.xs_menu
+  cursor: pointer
+  display: none
+
+.hambergerIcon
+  height: 4px
+  width: 45px
+  border-radius: 50px
+  background-color: #fff
+  transform: translate(-50%, -50%) rotate(0deg)
+  transition: all ease 0.5s
+  &::before, &::after
+    content: ""
+    position: absolute
+    height: inherit
+    border-radius: inherit
+    background-color: inherit
+    margin: auto
+    width: 50%
+    transition: all ease 0.5s
+
+  &::before
+    top: -12px
+    left: 0
+    transform-origin: left
+
+  &::after
+    bottom: -12px
+    right: 0
+    transform-origin: right
+
+.open
+  transform: translate(-50%, -50%) rotate(135deg)
+  &::before
+    top: 0
+    transform: translateX(100%) rotate(-90deg)
+
+  &::after
+    bottom: 0
+    transform: translateX(-100%) rotate(-90deg)
+
+.before-load
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  background: linear-gradient(316.02deg, #1ACBFD -79.1%, #345AFF 95.81%)
+  z-index: 1001
+
+.before-load img
+  width: 100px
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+ul.list_language
+  position: absolute
+  background: #fff
+  padding: 5px 10px
+  margin-left: -10px
+  top: 20px
+
+.info_section
+  position: relative
+
+.img_info
+  position: absolute
+
+.z-index-9
+  z-index: 9
+
+.img_info-animate1
+  top: 10%
+  left: 30%
+
+.img_info-animate2
+  top: 10%
+  left: 60%
+
+.img_info-animate3
+  top: 20%
+  left: 0
+
+.img_info-animate4
+  top: 11%
+  left: 50%
+
+.img_info-animate5
+  bottom: 10%
+  left: 30px
+
+.img_info-animate6
+  bottom: 8%
+  left: 40%
 
 
 
