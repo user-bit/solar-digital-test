@@ -1,9 +1,16 @@
 $(document).ready(function () {
-    $('.before-load').find('img').delay(700).fadeOut().end().delay(800).fadeOut('slow');
     new WOW().init();
     $(".xs_menu").on('click', function () {
         $(this).find(".hambergerIcon").toggleClass("open");
         $('ul.menu_list').toggleClass('active')
+    });
+
+    $('#ckLine').ckLine({
+        leftRight: false,
+        strokeColor: 'rgba(26,203,253,.5)',
+        interval: 800,
+        animateTime: 1600,
+        animationTimeRange: [800, 1600]
     });
 
     $('li.item_info').click(function () {
@@ -82,5 +89,59 @@ function animateDiv6() {
         animateDiv6();
     });
 };
+
+window.onload = function(){
+    trackMouse('.hoverable', '.js-pointer');
+}
+
+function trackMouse(hover, pointer) {
+
+    var $hover = document.querySelectorAll(hover);
+    var $pointer = document.querySelector(pointer);
+
+    var off = 50;
+    var first = !0;
+
+    function mouseX(evt) {
+        if (!evt) evt = window.event;
+        if (evt.pageX) return evt.pageX;
+        else if (evt.clientX) return evt.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
+        else return 0
+    }
+
+    function mouseY(evt) {
+        if (!evt) evt = window.event;
+        if (evt.pageY) return evt.pageY;
+        else if (evt.clientY) return evt.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+        else return 0
+    }
+
+    function follow(evt) {
+
+        if (first) {
+            first = !1;
+            $pointer.style.opacity = 1;
+        }
+
+        TweenMax.to($pointer, .7, {
+            left: (parseInt(mouseX(evt)) - off) + 'px',
+            top: (parseInt(mouseY(evt)) - off) + 'px',
+            ease: Power3.easeOut
+        });
+    }
+    document.onmousemove = follow;
+
+    (function hoverable(){
+        $hover.forEach(function(item){
+            item.addEventListener('mouseover', function(){
+                $pointer.classList.add('hide');
+            });
+            item.addEventListener('mouseout', function(){
+                $pointer.classList.remove('hide');
+            });
+        })
+    })();
+
+}
 
 
