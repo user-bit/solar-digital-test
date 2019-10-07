@@ -43,6 +43,8 @@ gulp.task('scripts', function() {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
         'app/js/_lazy.js',
+        'app/js/jquery.easing.js',
+        'app/js/rellax.js',
         'app/js/jquery.ckLine.js',
         'app/js/tweenMax.min.js',
         'app/js/_custom.js' // Custom scripts. Always at the end

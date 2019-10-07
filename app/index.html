@@ -14,17 +14,32 @@
     <meta name="msapplication-TileColor" content="#4346dc">
     <meta name="msapplication-config" content="img/_src/favicon/browserconfig.xml">
     <meta name="theme-color" content="#0e62a4">
-    <meta property="og:image" content="img/@1x/preview.jpg">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
+<div class="section_preloader">
+    <div class="preloader">
+        <div class="circle"></div>
+        <div class="percent">0%</div>
+    </div>
+</div>
 <svg id="ckLine" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="grid-blue-line grid-line-1"></div>
+<div class="grid-blue-line grid-line-2"></div>
+<div class="lg-rhombus-2 rellax" data-rellax-speed="7" style="transform: rotate(45deg);"></div>
+<div class="xs-rhombus-2 rellax" data-rellax-speed="2" style="transform: rotate(45deg);"></div>
+<div class="xs-rhombus-3 rellax" data-rellax-speed="8" style="transform: rotate(45deg);"></div>
+<div class="xs-rhombus-4 rellax" data-rellax-speed="2" style="transform: rotate(45deg);"></div>
 <div class="header_section">
+    <div class="grid-line grid-line-1"></div>
+    <div class="grid-line grid-line-2"></div>
+    <div class="lg-rhombus rellax" data-rellax-speed="7" style="transform: rotate(45deg);"></div>
+    <div class="xs-rhombus rellax" data-rellax-speed="2" style="transform: rotate(45deg);"></div>
     <div class="_container w_1340 z-index-4">
-        <div class="menu_top d-flex justify-space-between align-center p-25-0">
-            <div class="logo d-flex align-end">
+        <div class="menu_top d-flex justify-space-between align-center p-25-0 wow fadeIn" data-wow-delay="9s">
+            <div class="logo d-flex align-end" >
                 <div class="logo_block hoverable">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -85,11 +100,11 @@
                     </div>
                 </div>
                 <ul class="menu_list d-flex align-center">
-                    <li class="hoverable"><a href="#">Трейдерам</a></li>
-                    <li class="hoverable"><a href="#">О компании</a></li>
-                    <li class="line_horizontal"></li>
-                    <li class="hoverable"><a href="#">Войти</a></li>
-                    <li class="btn hoverable">
+                    <li class="hoverable wow fadeIn" data-wow-delay="9.2s"><a href="#">Трейдерам</a></li>
+                    <li class="hoverable wow fadeIn" data-wow-delay="9.4s"><a href="#">О компании</a></li>
+                    <li class="line_horizontal wow fadeIn" data-wow-delay="9.6s"></li>
+                    <li class="hoverable wow fadeIn" data-wow-delay="9.8s"><a href="#">Войти</a></li>
+                    <li class="btn hoverable wow fadeIn" data-wow-delay="10s">
                         <div class="button_base_regisrt b02_skewed_slide_in">
                             <div>Зарегистрироваться</div>
                             <div></div>
@@ -100,15 +115,32 @@
             </div>
         </div>
     </div>
-    <div class="absolute_center_section wow slideInDown" data-wow-delay="2.2s">
-        <h1>Простой инструмент для онлайн торговли</h1>
-        <p>Первая прибыль через 1 минуту</p>
-        <div class="button_base b03_skewed_slide_in hoverable">
+    <div class="absolute_center_section">
+        <h1
+                class="txt-rotate wow slideInDown"
+                data-wow-delay="5.2s"
+                data-period="2500"
+                data-rotate='[
+                "Простой инструмент для онлайн торговли",
+                "Минимальный депозит 10$",
+                "Персональный менеджер",
+                "Круглосуточная поддержка"
+                 ]'>
+
+        </h1>
+        <p class="wow slideInLeft" data-wow-delay="6.2s">Первая прибыль через 1 минуту</p>
+        <div class="button_base b03_skewed_slide_in hoverable wow fadeIn" data-wow-delay="7.2s">
             <div>Начать торговать</div>
             <div></div>
             <div>Начать торговать</div>
         </div>
     </div>
+    <div class="down_block hoverable">
+        <div class="deh m1"><pre> </pre></div>
+        <div class="deh m2"><pre> </pre></div>
+        <div class="deh m3"><pre> </pre></div>
+    </div>
+
 </div>
 
 <div class="_container w-1040 a_section">
@@ -217,7 +249,10 @@
 <div class="mobile_applications mt-290">
     <div class="_container w_1340 d-flex align-center h-700 flex-wrap">
         <div class="mobile_applications_left">
-            <div class="mobile_applications_title">Мобильные приложения</div>
+            <div class="mobile_applications_title txt-rotate"  data-period="2000" data-rotate='[
+                "Мобильные приложения",
+                "Торговля на нескольких графиках"
+                ]'></div>
             <div class="mobile_applications_text">
                 <span>
                     Торговля на нескольких графиках, технический анализ, история котировок и многое другое. Все, что вам нужно на платформе, доступно
@@ -234,7 +269,15 @@
 
 <div class="_container w_1340 mt-210">
     <div class="binary_section">
-        <div class="binary_title">Binotrade.com — бинарный опцион с личным помощником</div>
+        <div class="animate effect">
+            <span>Bi</span><span>no</span><span>tr</span><span>ade</span><span>.</span><span>com</span>
+            <span>—</span>
+            <span>бин</span><span>арн</span><span>ый</span>
+            <span>опц</span><span>ион</span>
+            <span>с</span>
+            <span>лич</span><span>ным</span>
+            <span>помощ</span><span>ником</span>
+        </div>
         <div class="binary_list d-flex justify-space-between mt-35">
             <div class="binary_item wow fadeIn">
                 <span>
@@ -303,6 +346,7 @@
     <img src="img/_src/arr_up.png" alt="стрелка">
 </div>
 <script src="js/wow.min.js"></script>
+
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

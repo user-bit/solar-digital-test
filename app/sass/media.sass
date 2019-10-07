@@ -60,7 +60,7 @@
     left: 0
     right: 0
 
-  li.item_info:before
+  li.item_info:before, .xs-rhombus, .grid-line-2, .xs-rhombus-4
     display: none
 
   img
@@ -119,9 +119,11 @@
 @media (max-width: 810px)
   .xs_menu
     display: block
+    position: relative
+    z-index: 99
 
   ul.menu_list
-    top: -100px
+    top: -10px
     transition: .4s
     visibility: hidden
     opacity: 0
@@ -190,6 +192,23 @@
     margin-left: unset
     margin-right: 10px
 
+  .grid-line-1
+    right: 40px
+
+  .lg-rhombus
+    width: 40px
+    height: 40px
+    right: 20px
+
+  .xs-rhombus-2
+    right: 20px
+
+  .xs-rhombus-3
+   display: none
+
+  svg#ckLine
+    display: none
+
 @media (max-width: 580px)
   .absolute_center_section, .header_section, .header_section:after
     height: 500px
@@ -223,8 +242,12 @@
     margin-top: 15px
   .text_deposit
     padding: 0
+  .effect span, .animate
+    font-size: 28px
 
 @media (max-width: 460px)
+  .absolute_center_section h1
+    min-height: unset
   .absolute_center_section, .header_section, .header_section:after
     height: 460px
   .absolute_center_section h1
@@ -241,8 +264,12 @@
     right: 0
   .mt-120
     margin-top: 50px
+  .down_block
+    left: 10px
 
 @media (max-width: 375px)
+  .grid-line-1, .lg-rhombus
+    display: none
   .assets_item
     width: 100%
     height: 80px

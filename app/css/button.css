@@ -1,3 +1,10 @@
+::-webkit-scrollbar { width: 5px; height: 3px;}
+::-webkit-scrollbar-track {  background-color: #345aff ;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #345aff ; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #345aff ;}
+::-webkit-resizer { background-color: #666;}
+
 .button_base {
     margin-top: 30px;
     box-shadow: 0 8px 14px rgba(0,107,206,.3);
@@ -149,4 +156,177 @@
 .b03_skewed_slide_in:hover div:nth-child(3) {
     left: 0px;
     transition: left 0.30000000000000004s ease;
+}
+.b03_skewed_slide_in.active div:nth-child(2) {
+    transition: all 0.5s ease;
+    transform: translate(-15px, 0px) skewX(-30deg);
+}
+.b03_skewed_slide_in.active div:nth-child(3) {
+    left: 0px;
+    transition: left 0.30000000000000004s ease;
+}
+
+.down_block {
+    position: absolute;
+    top: 70%;
+    left: 50px;
+    z-index: 9;
+    cursor: pointer;
+}
+.deh{
+    width:20px;
+    height:20px;
+    position:relative;
+    box-shadow: 5px 5px #fff;
+    transform: rotate(45deg);
+}
+.m1 {
+    animation: ani3 1.0s steps(5, start) infinite;
+    -webkit-animation: ani3 1.0s steps(5, start) infinite;
+}
+.m2 {
+    animation: ani2 1.0s steps(5, start) infinite;
+    -webkit-animation: ani2 1.0s steps(5, start) infinite;
+}
+.m3 {
+    animation: ani1 1.0s steps(5, start) infinite;
+    -webkit-animation: ani1 1.0s steps(5, start) infinite;
+}
+@keyframes ani1 {
+    0% {opacity:0.1;}
+    11% {opacity:0.1;}
+    22% {opacity:0.1;}
+    33% {opacity:0.15;}
+    44% {opacity:0.25;}
+    55% {opacity:0.5;}
+    66% {opacity:1;}
+    77% {opacity:0.5;}
+    88% {opacity:0.25;}
+    100% {opacity:0.15;}
+}
+@keyframes ani2 {
+    0% {opacity:0.1;}
+    11% {opacity:0.15;}
+    22% {opacity:0.25;}
+    33% {opacity:0.5;}
+    44% {opacity:1;}
+    55% {opacity:0.5;}
+    66% {opacity:0.25;}
+    77% {opacity:0.15;}
+    88% {opacity:0.1;}
+    100% {opacity:0.1;}
+}
+@keyframes ani3 {
+    0% {opacity:0.25;}
+    11% {opacity:0.5;}
+    22% {opacity:1;}
+    33% {opacity:0.5;}
+    44% {opacity:0.25;}
+    55% {opacity:0.15;}
+    66% {opacity:0.1;}
+    77% {opacity:0.1;}
+    88% {opacity:0.1;}
+    100% {opacity:0.15;}
+}
+.deh.active {
+    animation: none !important;
+}
+
+
+
+.animate span {
+    display: inline-block;
+}
+.animate span:nth-of-type(2) {
+    animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+    animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+    animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+    animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+    animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+    animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+    animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+    animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+    animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+    animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+    animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+    animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+    animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+    animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+    animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+    animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+    animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+    animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+    animation-delay: .95s;
+}
+
+/* Animation Seven */
+.animate {
+    font-size: 40px;
+}
+.effect span {
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: .09px;
+    line-height: 1.2;
+    opacity: 0;
+    transform: translate(-150px, 0) scale(.3);
+    animation: leftRight .5s forwards;
+}
+
+@keyframes leftRight {
+    40% {
+        transform: translate(50px, 0) scale(.7);
+        opacity: 1;
+        color: #1e2945;
+    }
+
+    60% {
+        color: #1e2945;
+    }
+
+    80% {
+        transform: translate(0) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0) scale(1);
+        opacity: 1;
+    }
 }
